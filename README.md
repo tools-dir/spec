@@ -2,6 +2,8 @@
 
 A proposal for a standard location for development-tool-specific files and directories within source code repositories.
 
+[Read the current version of the specification](/spec.md)
+
 ## The Problem
 
 Development tools increasingly add their own files and directories to the root of a repository.
