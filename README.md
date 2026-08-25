@@ -152,3 +152,7 @@ An important goal of this project will be documenting existing conventions and w
 Feedback, criticism, edge cases, and examples of existing tool conventions are welcome.
 
 Please use GitHub Issues and Discussions to help shape the specification before it is considered stable.
+
+## Credits
+
+- [Org Icon](https://icon-sets.iconify.design/?query=folder-tools) (MIT licensed)
