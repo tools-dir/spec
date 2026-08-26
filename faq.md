@@ -15,3 +15,7 @@ Or, if you really want to avoid file extensions:
 - `settings`
 
 If you chose `config.json` your app would expect to find the file in `tools/cslint/config.json` instead of in `.cslint` once the migration was complete.
+
+## We use multiple LLM agents and want to share skills, etc. between them, should we use tools/agents for this
+
+The `.tools` specification expects each subdirectory under `.tools` to be owned by a specific tool. Folders that are meant to be a "least common denominator" that no tool owns or writes to, but many tools might use for reference, are not covered by the specification. As such, while nothing would stop you from creating a `tools/agents` directory and putting shared files there, it goes against the (current) intended use of the specification.
