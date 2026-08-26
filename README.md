@@ -10,7 +10,7 @@ Development tools increasingly add their own files and directories to the root o
 
 A modern repository might contain:
 
-~~~text
+```text
 .agents/
 .aspire/
 .claude/
@@ -20,7 +20,7 @@ A modern repository might contain:
 .idea/
 .vs/
 .vscode/
-~~~
+```
 
 As the number of development tools grows, so does the amount of tool-specific metadata occupying the repository root.
 
@@ -34,27 +34,25 @@ Reserve a `.tools/` directory at the repository root for development-tool-specif
 
 Each tool receives its own directory beneath `.tools/`:
 
-~~~text
+```text
 .git/
 .tools/
-    agents/
     aspire/
     claude/
     codex/
-    github/
     jetbrains/
     visualstudio/
     vscode/
 src/
 tests/
 README.md
-~~~
+```
 
 The basic convention is:
 
-~~~text
+```text
 .tools/{tool-name}/
-~~~
+```
 
 Tools MUST use a dedicated directory beneath `.tools/` rather than placing files directly in `.tools/`.
 
@@ -62,7 +60,7 @@ The specification defines **where a tool may store its repository-specific resou
 
 For example:
 
-~~~text
+```text
 .tools/
     claude/
         settings.json
@@ -72,7 +70,7 @@ For example:
         settings.json
         launch.json
         tasks.json
-~~~
+```
 
 ## Principles
 
@@ -96,14 +94,14 @@ Some files have semantics based on their location or are fundamental parts of a 
 
 Examples might include:
 
-~~~text
+```text
 Directory.Build.props
 Directory.Build.targets
 Directory.Packages.props
 global.json
 package.json
 pyproject.toml
-~~~
+```
 
 Moving such files may change their behavior and is outside the scope of this proposal.
 
