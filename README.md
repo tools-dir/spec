@@ -139,6 +139,45 @@ The proposal is therefore:
 
 > **Don't standardize where configuration goes. Standardize where development tools put their stuff.**
 
+## Related Work and References
+
+The `.tools/` proposal builds on and is informed by previous efforts to reduce
+tool-specific clutter and establish predictable locations for development
+tooling resources.
+
+- [config-dir](https://github.com/pi0/config-dir) — An active proposal for
+  standardizing a project-level `.config/` directory. It addresses the closely
+  related problem of configuration-file proliferation and tracks adoption
+  across development tools.
+
+- [dot-config](https://dot-config.github.io/) — An earlier effort to promote
+  `.config/` as a standard location for project-specific tool configuration,
+  inspired by the XDG Base Directory Specification.
+
+- [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir/latest/) —
+  The established convention that consolidates user-specific configuration,
+  data, state, and cache files into common base directories rather than allowing
+  every application to create its own top-level location.
+
+- [Node.js Tooling: Recommendation for tooling config file location/format](https://github.com/nodejs/tooling/issues/71) —
+  A 2020 discussion of project-root configuration proliferation. Among the
+  proposals considered was a `tools` directory containing a subdirectory for
+  each tool. This establishes a precedent for this approach to this problem.
+
+- [Stay Out Of My (Project) $HOME](https://jackson.dev/post/stay-out-of-my-project-home/) —
+  A discussion of project-root clutter and existing standardization efforts,
+  including dot-config and the broader PRJ specification.
+
+- [AGENTS.md](https://agents.md/) — An example of multiple development-tool
+  vendors collaborating on a predictable, vendor-neutral repository convention
+  rather than requiring separate instructions for every tool.
+
+### Specification Conventions
+
+- [BCP 14](https://www.rfc-editor.org/info/bcp14/) —
+  Defines the normative `MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, and `MAY`
+  terminology used by this specification.
+
 ## Status
 
 This project is currently an early proposal.
