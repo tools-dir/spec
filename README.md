@@ -4,6 +4,8 @@ A proposal for a standard location for development-tool-specific files and direc
 
 [Read the current version of the specification](/spec.md)
 
+[See Projects currently following the tools-dir spec](/projects.md) **Add Yours!** 
+
 ## The Problem
 
 Development tools increasingly add their own files and directories to the root of a repository.
@@ -181,8 +183,6 @@ tooling resources.
 This project is currently an early proposal.
 
 The specification, naming conventions, scope, compatibility guidance, and migration strategy are open for discussion.
-
-Existing tools are **not expected to support `.tools/` today**.
 
 An important goal of this project will be documenting existing conventions and working with tool maintainers interested in supporting `.tools/{tool-name}/` as a standard discovery location.
 
